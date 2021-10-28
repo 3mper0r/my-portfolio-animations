@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    background-color: #40F99B;
+    color: #003554;
+    padding: 10px;
+    margin: 25px 25px 25px 25px;
+    width: auto;
+    font-family: 'Merienda', cursive;
+}
+
+#name {
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+nav {
+    display: grid;
+    place-items: center;
+}
+
+li, a {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: #003554;
+    padding-right: 5px;
+}
+
+body, main {
+    background-color: #5F021F;
+}
+
+.ontop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+    place-content: center;
+    place-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#main {
+    height: 300px;
+    width: 500px;
+}
+
+.headtitle {
+    background-color: #E54B4B;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.headtitle h1 {
+    color: #40F99B;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+p {
+    padding: 10px;
+    display: grid;
+    text-align: start;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Marienda', cursive;
+    color: #E54B4B;
+    padding: 10px;
+}
+
+.my-projects h2 {
+    color: #003554;
+}
+
+.my-projects {
+    background-color: #E54B4B;
+    padding: 40px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    place-content: center;
+    margin: auto;
+    width: 70%;
+    gap: 15px;
+}
+
+.swine-meeper, .lottery-picker, .ios-stopwatch {
+    background-color: #5F021F;
+    color: #40F99B;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 85px 20px 70px 40px;
+    gap: 10px;
+}
+
+img {
+    width: 300px;
+    height: 100px;
+}
+
+#icon {
+    width: 30px;
+    height: 25px;
+    display: inline-grid;
+}
+
+.experience {
+    display: inline-grid;
+    gap: 10px;
+    grid-template-rows: repeat(4, 50px);
+    width: auto;
+    text-align: start;
+}
+
+.my-experience {
+    display: grid;
+    place-content: center;
+    background-color: #003554;
+    align-content: center;
+    padding: 30px;
+}
+
+.hoxton, .boolean, .flatiron-master, .flatiron-lead {
+    border-radius: 8px;
+    color: #40F99B;
+    background-color: #5F021F;
+}
+
+.hoxton p, .boolean p, .flatiron-lead p, .flatiron-master p {
+    display: inline-grid;
+}
+
+#back-to-top {
+    width: auto;
+    text-align: center;
+    background-color: black;
+}
+
+#back-to-top a {
+    color: #40F99B;
+}
+
+.project-title {
+    color: #40F99B;
+    text-align: start;
+    padding: 5px 0px 0px 10px;
+}
+
+.projects a {
+    background-color: #003554;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.ios-stopwatch a {
+    height: 32px;
+}
+
+.scroll-down a {
+    width: auto;
+    color: #40F99B;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+/* ANiMATiONS */
+
+nav:hover {
+    box-shadow: #0772af 2px 2px 25px 1px;
+    animation-play-state: paused;
+}
+
+.headtitle:hover {
+    box-shadow: 5px 5px 25px 1px #0772af;
+}
+
+header:hover {
+    outline: #0772af 1px solid;
+    box-shadow: 2px 2px 25px 1px #E54B4B;
+}
+
+.projects a:hover {
+    color: #40F99B;
+}
+
+#back-to-top a:hover {
+    color: #5F021F;
+}
+
+.swine-meeper:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.lottery-picker:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.ios-stopwatch:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.hoxton:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.boolean:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.flatiron-master:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+.flatiron-lead:hover {
+    outline: #40F99B 1px solid;
+    box-shadow: 5px 5px 25px 1px #40F99B
+}
+
+nav {
+    animation: move-nav 9s infinite linear;
+    overflow: hidden;
+}
+
+#name {
+    animation: elidon-move 9s infinite linear;
+    overflow-x: hidden;
+}
+
+.scroll-down {
+    animation: click-here 1s infinite linear;
+    box-shadow: #E54B4B 0px 55px 55px;
+}
+
+@keyframes click-here {
+    0% {
+        transform: translate(0px, 12px);
+        opacity: 0.9;
+    }
+    12.5% {
+        transform: translate(0px, 2px);
+        opacity: 0.9;
+    }
+    25% {
+        transform: translate(0px, 4px);
+        opacity: 0.8;
+    }
+    37.5% {
+        transform: translate(0px, 6px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(0px, 8px);
+        opacity: 0.6;
+    }
+    62.5% {
+        transform: translate(0px, 10px);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(0px, 12px);
+        opacity: 0.6;
+    }
+    87.5% {
+        transform: translate(0px, 14px);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(0px, 20px);
+        opacity: 0.1;
+    }
+}
+
+@keyframes elidon-move {
+    5% {
+        transform: translate(60px, 0px);
+    }
+    10% {
+        transform: translate(120px, 0px);
+    }
+    15% {
+        transform: translate(180px, 0px);
+    }
+    20% {
+        transform: translate(240px, 0px);
+    }
+    25% {
+        transform: translate(300px, 0px);
+    }
+    30% {
+        transform: translate(360px, 0px);
+    }
+    35% {
+        transform: translate(420px, -18px);
+    }
+    40% {
+        transform: translate(480px, -18px);
+    }
+    45% {
+        transform: translate(540px, -18px);
+    }
+    50% {
+        transform: translate(600px, -18px);
+    }
+}
+
+@keyframes move-nav {
+    5% {
+        transform: translate(-60px, 0px);
+    }
+    10% {
+        transform: translate(-120px, 0px);
+    }
+    15% {
+        transform: translate(-180px, 0px);
+    }
+    20% {
+        transform: translate(-240px, 0px);
+    }
+    25% {
+        transform: translate(-300px, 0px);
+    }
+    30% {
+        transform: translate(-360px, 0px);
+    }
+    35% {
+        transform: translate(-420px, 23px);
+    }
+    40% {
+        transform: translate(-480px, 23px);
+    }
+    45% {
+        transform: translate(-540px, 23px);
+    }
+    50% {
+        transform: translate(-600px, 23px);
+    }
+}
